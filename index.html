@@ -39,11 +39,11 @@
     <div class="container-flex">
 
         <div class="row">
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 ">
                 <div class="row">
 
-                    <div class="col-12">
-                        <p id="tytul">FILTRY</p>
+                    <div class="col-12 fs-4 ">
+                        <p class="text-center" id="tytul">FILTRY</p>
                     </div>
 
                     
@@ -58,6 +58,7 @@
                             </select>
                         </div>
                     </div>
+
                     <div class="col-12 col-md-6 pb-3">
                         <div class="model">
                             <label for="model-select" class="form-label">MODEL</label>
@@ -66,98 +67,117 @@
                                 <option>A3</option>
                                 <option></option>
                             </select>
-
                         </div>
-            
                     </div>
                        
                     </div>
+                <div class="row">
                     <div class="col-12 col-md-6 pb-3">
                         <div class="rok">
-                        
-                            <label for="model-select" class="form-label">ROK PRODUKCJI</label>
+                            <label for="production-year-select" class="form-label">ROK PRODUKCJI</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="od" aria-label="od roku produkcji">
+                                <input type="text" class="form-control" placeholder="od roku" aria-label="od roku produkcji">
                                 <span class="input-group-text">-</span>
-                                <input type="text" class="form-control" placeholder="do" aria-label="do roku produkcji">
-                              </div>
-    
-                        </div>
-                        
-            
-                    </div>
-                    <div class="col-12 col-md-6">
-            
-                        <div class="cena">
-                            <p id="cena">CENA</p>
-                
-                            <div class="oddo">
-                            <input type="text" id="od" placeholder="od zł">
-                            <p>-</p>
-                            <input type="text" id="do" placeholder="do zł">
+                                <input type="text" class="form-control" placeholder="do roku" aria-label="do roku produkcji">
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-12 col-md-6">
+                
+                
+                
+                    <div class="col-12 col-md-6 pb-3">
+                        <div class="cena">
+                            <label for="price-select" class="form-label">CENA</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="od zł" aria-label="od złotych">
+                                <span class="input-group-text">-</span>
+                                <input type="text" class="form-control" placeholder="do zł" aria-label="do złotych">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="row">
+                    <div class="col-12 col-md-6 pb-3">
                         <div class="paliwo">
-                            <p>RODZAJ PALIWA</p>
-                            <select value="RODZAJ PALIWA">
+                            <label for="fuel-select" class="form-label">RODZAJ PALIWA</label>
+                            <select value="RODZAJ PALIWA" id="fuel-select" class="form-select">
                                 <option>------</option>
                                 <option>Diesel</option>
                                 <option></option>
-            
-                            </select>
+                                </select>
                         </div>
+                    </div>
             
             
+                    <div class="col-12 col-md-6 pb-3">
                         <div class="nadwozie">
-                            <p>TYP NADWOZIA</p>
-                            <select value="TYP NADWOZIA">
+                            <label for="body-select" class="form-label">RODZAJ NADWOZIA</label>
+                            <select value="RODZAJ NADWOZIA" id="body-select" class="form-select">
                                 <option>------</option>
                                 <option>Kombi</option>
                                 <option></option>
                             </select>
                         </div>
                     </div>
-
+                </div>
+                
+            
+                <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="pojemnosc">
-                            <p id="pojemnosc">POJEMNOŚĆ</p>
-                
-                            <div class="oddo">
-                            <input type="text" id="od" placeholder="od cm3">
-                            <p>-</p>
-                            <input type="text" id="do" placeholder="do cm3">
-                            </div>
-                        </div>
-            
-                        <div class="moc">
-                            <p id="moc">MOC</p>
-                
-                            <div class="oddo">
-                            <input type="text" id="od" placeholder="od km">
-                            <p>-</p>
-                            <input type="text" id="do" placeholder="do km">
+                            <label for="capacity-select" class="form-label">POJEMNOSC</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="od" aria-label="od litrów">
+                                <span class="input-group-text">-</span>
+                                <input type="text" class="form-control" placeholder="do" aria-label="do litrów">
                             </div>
                         </div>
                     </div>
+                
+            
                     <div class="col-12 col-md-6">
+                        <div class="power">
+                            <label for="power-select" class="form-label">MOC</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="od km" aria-label="od koni mechanicznych">
+                                <span class="input-group-text">-</span>
+                                <input type="text" class="form-control" placeholder="do km" aria-label="do koni mechanicznych">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 pb-3">
+                        <div class="skrzynia biegów">
+                            <label for="gear-select" class="form-label">SKRZYNIA BIEGÓW</label>
+                            <select value="SKRZYNIA BIEGÓW" id="gear-select" class="form-select">
+                                <option>------</option>
+                                <option>Manual</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 pb-3">
                         <div class="kolor">
-                            <p>KOLOR</p>
-                            <select value="kolor">
+                            <label for="color-select" class="form-label">KOLOR</label>
+                            <select value="KOLOR" id="color-select" class="form-select">
                                 <option>------</option>
                                 <option>Srebrny</option>
                                 <option></option>
                             </select>
                         </div>
                     </div>
+                </div>  
         
             </div>
-            <div class="col-md-6 col-xl-6 col-12">
+            <div class="col-md-6 col-xl-6 col-12 p-0">
             <h1>Tu narazie jest sciernisko</h1>
             </div>
-            <div class="col-xl-3 col-12 d-none d-xl-block">
+            <div class="col-xl-3 col-12 d-none d-xl-block p-0">
             Narzedia dodatkowe
             </div>
         </div>
