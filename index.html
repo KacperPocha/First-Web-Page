@@ -14,185 +14,196 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="container-flex">
+
         <div class="navigation">
 
-            <div class="logo"></div>
-            <div class="imgdiv">
-                <img src="logo.svg" alt="Logo">
+            <div class="pasek">
+                <img src="logo.svg" class="mx-auto d-block img-fluid p-3" alt="LOGO">
+                
+                <div class="social">
+                    <a href="https://www.facebook.com/kacper.pocha.9" class="fa fa-facebook" target = "blank"></a>
+                    <a href="https://www.instagram.com/kacper_pocha/" class="fa fa-instagram" target = "blank"></a>
+                    <a href="https://www.youtube.com/?gl=PL" class="fa fa-youtube" target = "blank"></a>
+                </div>
             </div>
-    
-            <div class="social">
-                <a href="https://www.facebook.com/kacper.pocha.9" class="fa fa-facebook" target = "blank"></a>
-                <a href="https://www.instagram.com/kacper_pocha/" class="fa fa-instagram" target = "blank"></a>
-                <a href="https://www.youtube.com/?gl=PL" class="fa fa-youtube" target = "blank"></a>
-            </div>
+            
 
+        
+            
             <nav>
-                <a href="index.html" class="menu" id="active">Oferta</a><a href="onas.html" class="menu">O nas</a><a href="#" class="menu">Galeria</a><a href="#" class="menu">Kontakt</a>
+                <a href="index.html" class="menu" id="active">Oferta</a><a href="onas.html" class="menu">O nas</a><a href="gallery.html" class="menu">Galeria</a><a href="#" class="menu">Kontakt</a>
             </nav>
     
 
         </div>
+
     </div>
 
-    <div class="container-flex">
-
-        <div class="row">
-            <div class="col-12 col-md-6 col-xl-3 ">
-                <div class="row">
-
-                    <div class="col-12 fs-4 ">
-                        <p class="text-center" id="tytul">FILTRY</p>
-                    </div>
-
-                    
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="marka">
-                            <label for="brand-select" class="form-label">MARKA</label>
-                            <select value="MARKA SAMOCHODU" id="brand-select" class="form-select">
-                                <option>------</option>
-                                <option>AUDI</option>
-                                <option></option>
-            
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="model">
-                            <label for="model-select" class="form-label">MODEL</label>
-                            <select value="MODEL SAMOCHODU" id="model-select" class="form-select">
-                                <option>------</option>
-                                <option>A3</option>
-                                <option></option>
-                            </select>
-                        </div>
-                    </div>
-                       
-                    </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="rok">
-                            <label for="production-year-select" class="form-label">ROK PRODUKCJI</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="od roku" aria-label="od roku produkcji">
-                                <span class="input-group-text">-</span>
-                                <input type="text" class="form-control" placeholder="do roku" aria-label="do roku produkcji">
-                            </div>
-                        </div>
-                    </div>
+    <div class="container-flex" id="background-filtrs">
+        <p class="text-center fs-4 pt-3" id="tytul">FILTRY</p>
                 
-                
-                
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="cena">
-                            <label for="price-select" class="form-label">CENA</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="od zł" aria-label="od złotych">
-                                <span class="input-group-text">-</span>
-                                <input type="text" class="form-control" placeholder="do zł" aria-label="do złotych">
-                            </div>
-                        </div>
-                    </div>
+        <div class="row row-cols-auto m-1">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="marka">
+                    <label for="brand-select" class="form-label">MARKA</label>
+                    <select value="MARKA SAMOCHODU" id="brand-select" class="form-select">
+                        <option>------</option>
+                        <option>AUDI</option>
+                        <option></option>
+                    </select>
                 </div>
-              
-                <div class="row">
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="paliwo">
-                            <label for="fuel-select" class="form-label">RODZAJ PALIWA</label>
-                            <select value="RODZAJ PALIWA" id="fuel-select" class="form-select">
-                                <option>------</option>
-                                <option>Diesel</option>
-                                <option></option>
-                                </select>
-                        </div>
-                    </div>
-            
-            
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="nadwozie">
-                            <label for="body-select" class="form-label">RODZAJ NADWOZIA</label>
-                            <select value="RODZAJ NADWOZIA" id="body-select" class="form-select">
-                                <option>------</option>
-                                <option>Kombi</option>
-                                <option></option>
-                            </select>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="model">
+                    <label for="model-select" class="form-label">MODEL</label>
+                    <select value="MODEL SAMOCHODU" id="model-select" class="form-select">
+                        <option>------</option>
+                        <option>A3</option>
+                        <option></option>
+                    </select>
                 </div>
+            </div>
                 
-            
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="pojemnosc">
-                            <label for="capacity-select" class="form-label">POJEMNOSC</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="od" aria-label="od litrów">
-                                <span class="input-group-text">-</span>
-                                <input type="text" class="form-control" placeholder="do" aria-label="do litrów">
-                            </div>
-                        </div>
-                    </div>
-                
-            
-                    <div class="col-12 col-md-6">
-                        <div class="power">
-                            <label for="power-select" class="form-label">MOC</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="od km" aria-label="od koni mechanicznych">
-                                <span class="input-group-text">-</span>
-                                <input type="text" class="form-control" placeholder="do km" aria-label="do koni mechanicznych">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="skrzynia biegów">
-                            <label for="gear-select" class="form-label">SKRZYNIA BIEGÓW</label>
-                            <select value="SKRZYNIA BIEGÓW" id="gear-select" class="form-select">
-                                <option>------</option>
-                                <option>Manual</option>
-                                <option></option>
-                            </select>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-md-6 pb-3">
-                        <div class="kolor">
-                            <label for="color-select" class="form-label">KOLOR</label>
-                            <select value="KOLOR" id="color-select" class="form-select">
-                                <option>------</option>
-                                <option>Srebrny</option>
-                                <option></option>
-                            </select>
-                        </div>
-                    </div>
-                </div>  
+    
         
+        
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="rok">
+                    <label for="production-year-select" class="form-label">ROK PRODUKCJI</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="od roku" aria-label="od roku produkcji">
+                        <span class="input-group-text">-</span>
+                        <input type="text" class="form-control" placeholder="do roku" aria-label="do roku produkcji">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-xl-6 col-12 p-0">
-            <h1>Tu narazie jest sciernisko</h1>
+        
+        
+        
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="cena">
+                    <label for="price-select" class="form-label">CENA</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="od zł" aria-label="od złotych">
+                        <span class="input-group-text">-</span>
+                        <input type="text" class="form-control" placeholder="do zł" aria-label="do złotych">
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-3 col-12 d-none d-xl-block p-0">
-            Narzedia dodatkowe
+        
+        
+
+        
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="paliwo">
+                    <label for="fuel-select" class="form-label">RODZAJ PALIWA</label>
+                    <select value="RODZAJ PALIWA" id="fuel-select" class="form-select">
+                        <option>------</option>
+                        <option>Diesel</option>
+                        <option></option>
+                        </select>
+                </div>
             </div>
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="nadwozie">
+                    <label for="body-select" class="form-label">RODZAJ NADWOZIA</label>
+                    <select value="RODZAJ NADWOZIA" id="body-select" class="form-select">
+                        <option>------</option>
+                        <option>Kombi</option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+        
+        
+
+        
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="pojemnosc">
+                    <label for="capacity-select" class="form-label">POJEMNOSC</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="od" aria-label="od litrów">
+                        <span class="input-group-text">-</span>
+                        <input type="text" class="form-control" placeholder="do" aria-label="do litrów">
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="power">
+                    <label for="power-select" class="form-label">MOC</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="od km" aria-label="od koni mechanicznych">
+                        <span class="input-group-text">-</span>
+                        <input type="text" class="form-control" placeholder="do km" aria-label="do koni mechanicznych">
+                    </div>
+                </div>
+            </div>
+       
+       
+
+        
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="skrzynia biegów">
+                    <label for="gear-select" class="form-label">SKRZYNIA BIEGÓW</label>
+                    <select value="SKRZYNIA BIEGÓW" id="gear-select" class="form-select">
+                        <option>------</option>
+                        <option>Manual</option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="kolor">
+                    <label for="color-select" class="form-label">KOLOR</label>
+                    <select value="KOLOR" id="color-select" class="form-select">
+                        <option>------</option>
+                        <option>Srebrny</option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 pb-5">
+                <div class="naped">
+                    <label for="naped-select" class="form-label">NAPĘD</label>
+                    <select value="NAPĘD" id="naped-select" class="form-select">
+                        <option>------</option>
+                        <option>Srebrny</option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 pb-5">
+                <div class="condition">
+                    <label for="condition-select" class="form-label">STAN TECHNICZNY</label>
+                    <select value="STAN" id="condition-select" class="form-select">
+                        <option>------</option>
+                        <option>Srebrny</option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+        </div>  
+
+    </div>
+        <div class="col-xl-5 col-md-12">
+        <h1>Tu narazie jest sciernisko</h1>
         </div>
-            
-
-
-
-    </div>
-
-        
-    </div>
-
+        <div class="">  
+        Narzedia dodatkowe
+        </div>
     
-
-    
-    
+        <script src="style.css"></script>
 </body>
 </html>
