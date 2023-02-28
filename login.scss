@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(117,6,6,1) 36%, rgba(184,0,0,1) 100%);;
+}
+
+
+.pole_logowania{
+    border: 2px solid black;
+}
+
+#pole{
+    border: 2px solid black;
+}
+
+
+#btn_active{
+    bottom: 103%;
+    margin-right: 10px;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#btn{
+    
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+}

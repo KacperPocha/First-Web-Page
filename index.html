@@ -20,12 +20,17 @@
         <div class="navigation">
 
             <div class="pasek">
-                <img src="logo.svg" class="mx-auto d-block img-fluid p-3" alt="LOGO">
-                
+
                 <div class="social">
                     <a href="https://www.facebook.com/kacper.pocha.9" class="fa fa-facebook" target = "blank"></a>
                     <a href="https://www.instagram.com/kacper_pocha/" class="fa fa-instagram" target = "blank"></a>
                     <a href="https://www.youtube.com/?gl=PL" class="fa fa-youtube" target = "blank"></a>
+                </div>
+
+                <img src="logo.svg" class="mx-auto d-block img-fluid p-4" alt="LOGO">
+                
+                <div class="logowanie">
+                    <a href="login.html" class="log_in">Zaloguj się</a>
                 </div>
             </div>
             
@@ -44,9 +49,9 @@
     <div class="container-flex" id="background-filtrs">
         <p class="text-center fs-4 pt-3" id="tytul">FILTRY</p>
                 
-        <div class="row row-cols-auto m-1">
+        <div class="row row-cols-auto m-2">
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="marka">
+                <div class="marka pb-2">
                     <label for="brand-select" class="form-label">MARKA</label>
                     <select value="MARKA SAMOCHODU" id="brand-select" class="form-select">
                         <option>------</option>
@@ -70,8 +75,8 @@
     
         
         
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="rok">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="rok pb-2">
                     <label for="production-year-select" class="form-label">ROK PRODUKCJI</label>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="od roku" aria-label="od roku produkcji">
@@ -83,8 +88,8 @@
         
         
         
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="cena">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="cena pb-2">
                     <label for="price-select" class="form-label">CENA</label>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="od zł" aria-label="od złotych">
@@ -98,7 +103,7 @@
 
         
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="paliwo">
+                <div class="paliwo pb-2">
                     <label for="fuel-select" class="form-label">RODZAJ PALIWA</label>
                     <select value="RODZAJ PALIWA" id="fuel-select" class="form-select">
                         <option>------</option>
@@ -123,8 +128,8 @@
         
 
         
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="pojemnosc">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="pojemnosc pb-2">
                     <label for="capacity-select" class="form-label">POJEMNOSC</label>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="od" aria-label="od litrów">
@@ -135,8 +140,8 @@
             </div>
         
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="power">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="power pb-2">
                     <label for="power-select" class="form-label">MOC</label>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="od km" aria-label="od koni mechanicznych">
@@ -150,7 +155,7 @@
 
         
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="skrzynia biegów">
+                <div class="skrzynia biegów pb-2">
                     <label for="gear-select" class="form-label">SKRZYNIA BIEGÓW</label>
                     <select value="SKRZYNIA BIEGÓW" id="gear-select" class="form-select">
                         <option>------</option>
@@ -204,6 +209,6 @@
         Narzedia dodatkowe
         </div>
     
-        <script src="style.css"></script>
+        <script src="script.js"></script>
 </body>
 </html>

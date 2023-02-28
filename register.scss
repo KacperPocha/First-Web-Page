@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pole_logowania{
+    border: 2px solid black;
+}
+
+#pole{
+    border: 2px solid black;
+}
+
+
+
+#btn_active{
+    bottom: 98%;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    
+}
